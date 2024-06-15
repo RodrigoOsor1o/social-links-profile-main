@@ -1,0 +1,149 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1rem;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body{
+    background-color: rgb(23, 23, 23);
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.space{
+
+    font-weight: bold;
+    padding: 0.7rem 0rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.4rem;
+    margin: 0.8rem 0.6rem;
+    background-color: rgb(72, 72, 72);
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transition:0.3s;
+
+}   
+
+.ancla{
+
+    font-size: 0.8rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.container{
+    margin: auto;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;  
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    align-items: center;
+    bottom: top;
+    max-width: 300px;
+    max-height: 820px;
+    background-color: rgb(36, 36, 36);
+
+}
+
+.name{
+    margin: 1rem 0rem 0.5rem 0rem ;
+}
+
+.photo{
+
+    margin: 1rem 0rem 0.2rem 0rem;
+    border-radius: 5rem;
+    width: 6rem;
+
+}
+
+.dato{
+    font-size: 0.9rem;
+
+}
+
+.ubication{
+    font-weight: bold;
+    color: greenyellow;
+    font-size: 0.9rem;
+    margin: 0rem;
+    margin: 0rem 0rem 1.7rem 0rem;
+}
+
+.space:hover{
+    background-color: rgb(18, 179, 26);
+    color: black;
+}
